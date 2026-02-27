@@ -1,55 +1,39 @@
 /*  your css code here. If applicable */
 #grid {
   display: grid;
-  grid-template-rows: 124px 124px 124px 124px 124px;
-  grid-template-columns: 242.5px 242.5px 242.5px 242.5px 242.5px;
-  gap: 10px 10px;
-  background: white;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 124px);
+  gap: 10px;
 }
 
-#grid div {
+#grid > div {
   background: green;
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   padding: 10px;
 }
 
+/* 1 */
 #grid > div:nth-child(1) {
-	grid-column:span 4/auto;
+  grid-column: span 4;
 }
 
+/* 2 */
 #grid > div:nth-child(2) {
-	grid-column:span 4/auto;
+  grid-row: span 4;
 }
 
-/* #grid > div:nth-child(3) {
-	grid-column:span 4/auto;
-} */
-
+/* 4 */
 #grid > div:nth-child(4) {
-	grid-column:span 2/auto;
+  grid-column: span 2;
 }
 
+/* 5 */
 #grid > div:nth-child(5) {
-	grid-column:span 2/auto;
+  grid-column: span 2;
 }
 
-/* #grid > div:nth-child(6) {
-	grid-column:span 4/auto;
-}
-
-#grid > div:nth-child(7) {
-	grid-column:span 4/auto;
-}
-
-#grid > div:nth-child(8) {
-	grid-column:span 2/auto;
-}
-
-#grid > div:nth-child(9) {
-	grid-column:span 2/auto;
-} */
-
+/* 10 */
 #grid > div:nth-child(10) {
-	grid-column:span 3/auto;
+  grid-column: span 3;
 }
