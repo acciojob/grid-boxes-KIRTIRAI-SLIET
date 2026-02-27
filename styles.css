@@ -1,1 +1,57 @@
 /*  your css code here. If applicable */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(5, 120px);
+  gap: 10px;
+  background: white;
+}
+
+.item {
+  background: green;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Layout positioning */
+
+.i1 {
+  grid-column: 1 / 5;
+}
+
+.i2 {
+  grid-row: 2 / 6;
+}
+
+.i3 {
+  grid-column: 2 / 3;
+}
+
+.i4 {
+  grid-column: 3 / 5;
+}
+
+.i5 {
+  grid-column: 2 / 4;
+}
+
+.i6 {
+  grid-column: 4 / 5;
+}
+
+.i7 {
+  grid-column: 2 / 3;
+}
+
+.i8 {
+  grid-column: 3 / 4;
+}
+
+.i9 {
+  grid-column: 4 / 5;
+}
+
+.i10 {
+  grid-column: 2 / 5;
+}
